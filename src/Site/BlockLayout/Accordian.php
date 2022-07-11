@@ -92,41 +92,6 @@ class Accordian extends AbstractBlockLayout
         $fieldset->populateValues($dataForm);
 
         return $view->formCollection($fieldset);
-
-/*
-        $form = new Form();
-        $heading = new Element\Text("o:block[__blockIndex__][o:data][heading]");
-        $heading->setOptions([
-            'label' => 'Section heading:' // @translate
-        ]);
-        $initialState = new Element\Radio("o:block[__blockIndex__][o:data][initial_state]");
-        $initialState->setOptions([
-            'label' => 'Initial state:', // @translate
-            'value_options' => [
-                'closed' => 'closed', // @translate
-                'open' => 'open' // @translate
-            ]
-        ]);
-        $html = new Element\Textarea("o:block[__blockIndex__][o:data][html]");
-        $html->setAttribute('class', 'block-html full wysiwyg');
-        $divClass = new Element\Text("o:block[__blockIndex__][o:data][divclass]");
-        $divClass->setOptions([
-            'label' => 'Class', // @translate
-            'info' => 'Optional CSS class for styling HTML.', // @translate
-        ]);
-        if ($block) {
-            $heading->setValue($block->dataValue('heading'));
-            $initialState->setValue($block->dataValue('initialState'));
-            $html->setValue($block->dataValue('html'));
-            $divClass->setValue($block->dataValue('divclass'));
-        }
-        $form->add($heading);
-        $form->add($initialState);
-        $form->add($html);
-        $form->add($divClass);
-
-        return $view->formCollection($form);
-*/
     }
 
     public function render(PhpRenderer $view, SitePageBlockRepresentation $block)
