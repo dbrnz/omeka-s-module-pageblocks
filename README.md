@@ -9,6 +9,7 @@ The currently available blocks are:
 * Two column HTML
 * Three column HTML
 * List of topics
+* Accordian sections
 
 ## Installation
 

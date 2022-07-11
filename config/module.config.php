@@ -15,7 +15,8 @@ return [
             'media-single' => Service\BlockLayout\MediaSingleFactory::class,
             'two-column' => Service\BlockLayout\TwoColumnFactory::class,
             'three-column' => Service\BlockLayout\ThreeColumnFactory::class,
-            'topics-list' => Service\BlockLayout\TopicsListFactory::class
+            'topics-list' => Service\BlockLayout\TopicsListFactory::class,
+            'accordian' => Service\BlockLayout\AccordianFactory::class
         ],
     ],
     'form_elements' => [
